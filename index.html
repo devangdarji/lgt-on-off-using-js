@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb on of</title>
+    <link href="css.css" rel= "stylesheet" type="text/css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Turn the light on/off</h2>
+        <main>
+            <img src="3-bulb-png-image.png" alt="lgton">
+        </main>
+        <div class="btn">
+            <div class="btn1">turn on</div>
+            <div class="msg">Bulb is off</div>
+            <div class="btn2">turn off</div>
+        </div>
+    </div>
+
+    <script>
+        let btn1=document.querySelector(".btn1")
+        let btn2=document.querySelector(".btn2")
+        let msg=document.querySelector(".msg")
+        let imgsrc=document.querySelector("img")
+
+        function lgton(){
+            imgsrc.src = "light-bulb-png-bulb-png1247-12.png";
+            msg.innerHTML="Bulb is on";
+        }
+        function lgtoff(){
+            imgsrc.src = "3-bulb-png-image.png";
+            msg.innerHTML="Bulb is off";
+        }
+        
+        btn1.addEventListener("click",lgton) 
+        btn2.addEventListener("click",lgtoff)
+
+
+    </script>
+</body>
+</html>
